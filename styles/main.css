@@ -1,0 +1,60 @@
+@import "./result.css";
+@import "./summary.css";
+
+@font-face {
+  font-family: "Hanken Grotesk";
+  src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "Hanken Grotesk";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.benchmark {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 750px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .benchmark {
+    flex-direction: row;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 1.67rem;
+  }
+
+  .benchmark__result,
+  .benchmark__summary {
+    width: 365px;
+    height: 515px;
+    padding: 2.222rem;
+    overflow: hidden;
+    border-radius: 1.67rem;
+  }
+
+  .benchmark__result {
+    padding: 40px 60px;
+  }
+}
