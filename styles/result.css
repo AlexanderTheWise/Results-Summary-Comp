@@ -1,8 +1,9 @@
-h2 {
+p.result__title,
+p.summary__title {
   font-size: 1.056rem;
 }
 
-h3 {
+h1 {
   font-size: 24px;
   color: white;
   margin-bottom: 5px;
@@ -44,7 +45,8 @@ em {
 }
 
 @media (min-width: 750px) {
-  h2 {
+  span.result__title,
+  span.summary__title {
     font-size: 1.2rem;
   }
 
